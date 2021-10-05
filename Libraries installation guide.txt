@@ -1,0 +1,14 @@
+conda config --set ssl_verify false
+
+conda install -c anaconda pip
+
+conda create -n Anomaly
+
+conda env list
+
+activate Anomaly
+
+pip install --upgrade jupyterlab
+
+pip install sklearn , pandas, numpy, fbprophet, pystan, Tensorflow, keras, networkx, scipy, Spektral
+
