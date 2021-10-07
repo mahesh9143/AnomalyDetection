@@ -1,14 +1,33 @@
-conda config --set ssl_verify false
+//The following commands should be entered in the Ananconda promt to give necessary permissions for the Libraries installation.
 
-conda install -c anaconda pip
+conda config --set ssl_verify false  
 
-conda create -n Anomaly
 
+//upgrage the pip
+conda install -c anaconda pip  
+
+// Creating a new environment to install all the libraries
+conda create -n Anomaly   
+
+//To see available environments to check whether the created environment exist 
 conda env list
 
+//Must activate the environment to run the jupyter notebook files to run in the same environments
 activate Anomaly
 
+//upgrade the jupyter notebook
 pip install --upgrade jupyterlab
 
-pip install sklearn , pandas, numpy, fbprophet, pystan, Tensorflow, keras, networkx, scipy, Spektral
+//install the below necessary libraries
+pip install sklearn
+pip install pandas
+pip install numpy
+pip install fbprophet
+pip install pystan
+pip install Tensorflow
+pip install keras
+pip install networkx
+pip install scipy
+pip install Spektral
+
 
